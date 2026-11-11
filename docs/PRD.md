@@ -1,5 +1,5 @@
 # Product Requirements Document (PRD)
-## JobVastundhi 🎯
+## jobVastadhi 🎯
 > **Ace Your Technical Interview.**  
 > *Most-Asked Technical Interview Questions for Freshers & Entry-Level Developers.*  
 > **Developed by Sharief**
@@ -7,11 +7,11 @@
 ---
 
 ## 1. Product Overview & Vision
-**JobVastundhi** is an ultra-fast, zero-friction, 100% client-side technical interview preparation platform designed specifically for college freshers, final-year engineering students, and entry-level developers preparing for IT campus placements, MNC recruitment drives (TCS, Infosys, Wipro, Accenture, Cognizant), and tech startup technical rounds.
+**jobVastadhi** is an ultra-fast, zero-friction, 100% client-side technical interview preparation platform designed specifically for college freshers, final-year engineering students, and entry-level developers preparing for IT campus placements, MNC recruitment drives (TCS, Infosys, Wipro, Accenture, Cognizant), and tech startup technical rounds.
 
 The application eliminates all onboarding friction: **no registration, no passwords, no databases, and no tracking**. Users provide their personal Google Gemini API key (Bring Your Own Key - BYOK), which is stored strictly within browser `localStorage`. 
 
-JobVastundhi simulates the authentic Computer-Based Test (CBT) experience of modern recruitment platforms (like HackerRank, TCS iON, and GATE) with real-time question palettes, zero-latency background question batching, skeleton loading states, celebratory milestone achievement boards every 10 questions, and instant 1-click downloads of comprehensive PDF and Markdown assessment reports.
+jobVastadhi simulates the authentic Computer-Based Test (CBT) experience of modern recruitment platforms (like HackerRank, TCS iON, and GATE) with real-time question palettes, zero-latency background question batching, skeleton loading states, celebratory milestone achievement boards every 10 questions, and instant 1-click downloads of comprehensive PDF and Markdown assessment reports.
 
 ---
 
@@ -39,7 +39,7 @@ JobVastundhi simulates the authentic Computer-Based Test (CBT) experience of mod
 ## 4. Functional Specifications
 
 ### 4.1. Brand Identity & Header Navigation
-- **Branding**: **JobVastundhi** with developer attribution **"Developed by Sharief"**.
+- **Branding**: **jobVastadhi** with developer attribution **"Developed by Sharief"**.
 - **Iconography**: Bespoke modern vector monogram fusing the letter **J** (Cyan to Indigo) with the **V** Victory career checkmark (Emerald to Mint).
 - **Navigation Controls**:
   - Home / Topic switcher with confirmation dialog if a test is in progress.
@@ -97,8 +97,8 @@ JobVastundhi simulates the authentic Computer-Based Test (CBT) experience of mod
 
 ### 4.7. Download & Export System
 - **Pure Client-Side PDF Generation (`jsPDF`)**:
-  - Generates a branded, formatted PDF document titled `JobVastundhi - [Topic] Interview Assessment Report`.
-  - Header: JobVastundhi brand, "Developed by Sharief", candidate score, accuracy, difficulty level, and generation timestamp.
+  - Generates a branded, formatted PDF document titled `jobVastadhi - [Topic] Interview Assessment Report`.
+  - Header: jobVastadhi brand, "Developed by Sharief", candidate score, accuracy, difficulty level, and generation timestamp.
   - Body: Numbered list of all answered questions with question text, candidate's picked option, correct answer, and full technical interview rationale.
 - **Markdown (.md) Export**:
   - Clean GitHub-flavored markdown export ideal for pasting into Notion, Obsidian, or GitHub Gists for interview revision.

@@ -91,7 +91,7 @@ export function Logo({ showTagline = true, size = 'md' }) {
               isSm ? 'text-sm' : isLg ? 'text-2xl sm:text-3xl' : 'text-base sm:text-lg'
             }`}
           >
-            Job<span className="bg-gradient-to-r from-emerald-400 to-teal-300 bg-clip-text text-transparent">Vastundhi</span>
+            job<span className="bg-gradient-to-r from-emerald-400 to-teal-300 bg-clip-text text-transparent">Vastadhi</span>
           </span>
           <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse" />
         </div>

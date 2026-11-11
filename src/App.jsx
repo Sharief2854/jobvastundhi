@@ -209,7 +209,7 @@ export default function App() {
       <footer className="border-t border-zinc-900 py-6 text-center text-xs text-zinc-500">
         <div className="max-w-6xl mx-auto px-4 flex flex-col sm:flex-row items-center justify-between gap-3">
           <div className="flex items-center gap-2 text-zinc-400 text-xs">
-            <span className="font-bold text-zinc-100">Job<span className="text-emerald-400">Vastundhi</span></span>
+            <span className="font-bold text-zinc-100">job<span className="text-emerald-400">Vastadhi</span></span>
             <span className="text-zinc-600">•</span>
             <span>Developed by <strong className="text-zinc-200 font-semibold">Sharief</strong></span>
             <span className="text-zinc-600 hidden sm:inline">•</span>

@@ -49,7 +49,7 @@ export function exportToPdf({ questions = [], topic = 'Technical', stats = {}, d
   doc.setFont('helvetica', 'bold');
   doc.setFontSize(14);
   doc.setTextColor(255, 255, 255);
-  doc.text('JOBVASTUNDHI - INTERVIEW ASSESSMENT REPORT', margin + 6, cursorY + 9);
+  doc.text('JOBVASTADHI - INTERVIEW ASSESSMENT REPORT', margin + 6, cursorY + 9);
 
   doc.setFont('helvetica', 'normal');
   doc.setFontSize(9);
@@ -153,7 +153,7 @@ export function exportToPdf({ questions = [], topic = 'Technical', stats = {}, d
     cursorY += 6;
   });
 
-  const fileName = `jobvastundhi-${topic.toLowerCase().replace(/[^a-z0-9]/g, '-')}-questions.pdf`;
+  const fileName = `jobvastadhi-${topic.toLowerCase().replace(/[^a-z0-9]/g, '-')}-questions.pdf`;
   doc.save(fileName);
 }
 
@@ -167,7 +167,7 @@ export function exportToMarkdown({ questions = [], topic = 'Technical', stats = 
     day: 'numeric',
   });
 
-  let md = `# JobVastundhi - ${topic} Interview Assessment Report\n\n`;
+  let md = `# jobVastadhi - ${topic} Interview Assessment Report\n\n`;
   md += `*Developed by Sharief*  \n`;
   md += `**Level:** ${difficulty}  |  **Date:** ${dateStr}  \n`;
 
@@ -206,7 +206,7 @@ export function exportToMarkdown({ questions = [], topic = 'Technical', stats = 
   const url = URL.createObjectURL(blob);
   const a = document.createElement('a');
   a.href = url;
-  a.download = `jobvastundhi-${topic.toLowerCase().replace(/[^a-z0-9]/g, '-')}-questions.md`;
+  a.download = `jobvastadhi-${topic.toLowerCase().replace(/[^a-z0-9]/g, '-')}-questions.md`;
   a.click();
   URL.revokeObjectURL(url);
 }

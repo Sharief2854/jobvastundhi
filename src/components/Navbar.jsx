@@ -24,7 +24,7 @@ export function Navbar({
           <button
             onClick={onChangeTopic}
             className="flex items-center gap-2.5 text-left group transition-opacity hover:opacity-90 cursor-pointer"
-            aria-label="JobVastundhi Home"
+            aria-label="jobVastadhi Home"
           >
             <Logo size="sm" showTagline={true} />
           </button>

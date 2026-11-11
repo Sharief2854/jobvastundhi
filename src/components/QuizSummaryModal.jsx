@@ -68,7 +68,7 @@ export function QuizSummaryModal({
         <div className="p-6 border-b border-zinc-800 space-y-4 text-center">
           <div className="space-y-1">
             <div className="flex items-center justify-center gap-1.5 text-[11px] text-zinc-400">
-              <span className="font-bold text-zinc-200">Job<span className="text-emerald-400">Vastundhi</span></span>
+              <span className="font-bold text-zinc-200">job<span className="text-emerald-400">Vastadhi</span></span>
               <span className="text-zinc-600">•</span>
               <span>Developed by <strong className="text-zinc-200">Sharief</strong></span>
             </div>

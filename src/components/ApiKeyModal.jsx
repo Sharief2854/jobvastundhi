@@ -102,7 +102,7 @@ export function ApiKeyModal({
               {currentKey ? 'API Key Settings' : 'Connect Google Gemini API Key'}
             </h2>
             <p id="api-key-modal-desc" className="text-xs text-zinc-400">
-              JobVastundhi runs 100% in your browser • Free • Direct from Google AI Studio
+              jobVastadhi runs 100% in your browser • Free • Direct from Google AI Studio
             </p>
           </div>
         </div>

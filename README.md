@@ -1,4 +1,4 @@
-# JobVastundhi 🎯
+# jobVastadhi 🎯
 > **Ace Your Technical Interview.**  
 > *Most-Asked Technical Interview Questions for Freshers & Entry-Level Developers.*  
 > **Developed by Sharief**
@@ -10,11 +10,11 @@
 
 ---
 
-## 🚀 About JobVastundhi
+## 🚀 About jobVastadhi
 
-**JobVastundhi** is an ultra-fast, 100% client-side technical interview preparation simulator tailored specifically for college graduates, freshers, and developers who recently started learning.
+**jobVastadhi** is an ultra-fast, 100% client-side technical interview preparation simulator tailored specifically for college graduates, freshers, and developers who recently started learning.
 
-Powered directly by the candidate's **Google Gemini API Key (BYOK)**, JobVastundhi requires **zero login, zero backend, and zero tracking**—storing API keys strictly in the browser's local storage.
+Powered directly by the candidate's **Google Gemini API Key (BYOK)**, jobVastadhi requires **zero login, zero backend, and zero tracking**—storing API keys strictly in the browser's local storage.
 
 📖 **Comprehensive PRD**: For complete architectural specifications and product requirements, read the [Product Requirements Document (PRD)](docs/PRD.md).
 
