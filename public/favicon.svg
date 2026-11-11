@@ -1,22 +1,58 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64" fill="none">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
   <defs>
-    <linearGradient id="jv-grad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#6366f1" />
-      <stop offset="100%" stop-color="#10b981" />
-    </linearGradient>
-    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+    <!-- Background Gradient -->
+    <linearGradient id="fav-bg" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#18181b" />
       <stop offset="100%" stop-color="#09090b" />
     </linearGradient>
+
+    <!-- Border Glow -->
+    <linearGradient id="fav-border" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3f3f46" />
+      <stop offset="50%" stop-color="#27272a" />
+      <stop offset="100%" stop-color="#10b981" stop-opacity="0.6" />
+    </linearGradient>
+
+    <!-- Ambient Center Radial Glow -->
+    <radialGradient id="fav-glow" cx="50%" cy="45%" r="55%">
+      <stop offset="0%" stop-color="#10b981" stop-opacity="0.2" />
+      <stop offset="100%" stop-color="#10b981" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- J Glyph Gradient (Cyan to Indigo) -->
+    <linearGradient id="fav-j" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="100%" stop-color="#6366f1" />
+    </linearGradient>
+
+    <!-- V Glyph Gradient (Emerald to Spring Mint) -->
+    <linearGradient id="fav-v" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#059669" />
+      <stop offset="50%" stop-color="#10b981" />
+      <stop offset="100%" stop-color="#34d399" />
+    </linearGradient>
   </defs>
+
   <!-- Squircle Base Frame -->
-  <rect x="2" y="2" width="60" height="60" rx="16" fill="url(#bg-grad)" stroke="#27272a" stroke-width="2.5" />
-  
-  <!-- J Monogram Stem & Hook -->
-  <path d="M20 18h14" stroke="url(#jv-grad)" stroke-width="4.5" stroke-linecap="round" />
-  <path d="M27 18v20c0 4.5-3 7.5-7.5 7.5-3.5 0-6.5-2-7.5-5" stroke="url(#jv-grad)" stroke-width="4.5" stroke-linecap="round" />
-  
-  <!-- Dynamic Success / Placement Checkmark -->
-  <path d="M26 34l7 7 17-18" stroke="#10b981" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
-  <circle cx="50" cy="23" r="2.5" fill="#34d399" />
+  <rect x="2" y="2" width="60" height="60" rx="16" fill="url(#fav-bg)" />
+  <rect x="2" y="2" width="60" height="60" rx="16" fill="url(#fav-glow)" />
+  <rect x="2" y="2" width="60" height="60" rx="16" stroke="url(#fav-border)" stroke-width="1.75" />
+
+  <!-- J Glyph: Sleek vertical stem with rounded bottom hook -->
+  <path
+    d="M21 16v19c0 5-4 9-9 9"
+    stroke="url(#fav-j)"
+    stroke-width="6.5"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+
+  <!-- V Glyph: Dynamic Victory Career Checkmark -->
+  <path
+    d="M31 29l8 15 13-28"
+    stroke="url(#fav-v)"
+    stroke-width="6.5"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
 </svg>

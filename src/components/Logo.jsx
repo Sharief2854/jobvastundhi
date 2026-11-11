@@ -10,48 +10,69 @@ export function LogoIcon({ className = 'w-8 h-8' }) {
       aria-hidden="true"
     >
       <defs>
-        <linearGradient id="logo-jv-grad" x1="0%" y1="0%" x2="100%" y2="100%">
-          <stop offset="0%" stopColor="#6366f1" />
-          <stop offset="100%" stopColor="#10b981" />
-        </linearGradient>
-        <linearGradient id="logo-bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+        {/* Background Obsidian Gradient */}
+        <linearGradient id="logo-bg" x1="0%" y1="0%" x2="100%" y2="100%">
           <stop offset="0%" stopColor="#18181b" />
           <stop offset="100%" stopColor="#09090b" />
         </linearGradient>
+
+        {/* Ambient Center Glow */}
+        <radialGradient id="logo-ambient-glow" cx="50%" cy="45%" r="55%">
+          <stop offset="0%" stopColor="#10b981" stopOpacity="0.22" />
+          <stop offset="100%" stopColor="#10b981" stopOpacity="0" />
+        </radialGradient>
+
+        {/* Border Stroke Gradient */}
+        <linearGradient id="logo-border-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" stopColor="#3f3f46" />
+          <stop offset="50%" stopColor="#27272a" />
+          <stop offset="100%" stopColor="#10b981" stopOpacity="0.6" />
+        </linearGradient>
+
+        {/* J Glyph Gradient (Tech Cyan to Indigo) */}
+        <linearGradient id="logo-j-grad" x1="0%" y1="0%" x2="0%" y2="100%">
+          <stop offset="0%" stopColor="#38bdf8" />
+          <stop offset="100%" stopColor="#6366f1" />
+        </linearGradient>
+
+        {/* V Glyph Gradient (Emerald to Luminous Mint) */}
+        <linearGradient id="logo-v-grad" x1="0%" y1="100%" x2="100%" y2="0%">
+          <stop offset="0%" stopColor="#059669" />
+          <stop offset="45%" stopColor="#10b981" />
+          <stop offset="100%" stopColor="#34d399" />
+        </linearGradient>
       </defs>
-      {/* Outer rounded squircle */}
+
+      {/* Squircle Base Frame */}
+      <rect x="2" y="2" width="60" height="60" rx="16" fill="url(#logo-bg)" />
+      <rect x="2" y="2" width="60" height="60" rx="16" fill="url(#logo-ambient-glow)" />
       <rect
         x="2"
         y="2"
         width="60"
         height="60"
         rx="16"
-        fill="url(#logo-bg-grad)"
-        stroke="#27272a"
-        strokeWidth="2.5"
+        stroke="url(#logo-border-grad)"
+        strokeWidth="1.75"
       />
-      {/* J Top & Stem */}
+
+      {/* J Glyph: Modern vertical column curving into bottom hook */}
       <path
-        d="M20 18h14"
-        stroke="url(#logo-jv-grad)"
-        strokeWidth="4.5"
-        strokeLinecap="round"
-      />
-      <path
-        d="M27 18v20c0 4.5-3 7.5-7.5 7.5-3.5 0-6.5-2-7.5-5"
-        stroke="url(#logo-jv-grad)"
-        strokeWidth="4.5"
-        strokeLinecap="round"
-      />
-      {/* Upward Career Checkmark */}
-      <path
-        d="M26 34l7 7 17-18"
-        stroke="#10b981"
-        strokeWidth="5"
+        d="M21 16v19c0 5-4 9-9 9"
+        stroke="url(#logo-j-grad)"
+        strokeWidth="6.5"
         strokeLinecap="round"
         strokeLinejoin="round"
       />
-      <circle cx="50" cy="23" r="2.5" fill="#34d399" />
+
+      {/* V Glyph: Upward Victory / Career Success Checkmark */}
+      <path
+        d="M31 29l8 15 13-28"
+        stroke="url(#logo-v-grad)"
+        strokeWidth="6.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
     </svg>
   );
 }
@@ -70,7 +91,7 @@ export function Logo({ showTagline = true, size = 'md' }) {
               isSm ? 'text-sm' : isLg ? 'text-2xl sm:text-3xl' : 'text-base sm:text-lg'
             }`}
           >
-            Job<span className="text-emerald-400">Vastundhi</span>
+            Job<span className="bg-gradient-to-r from-emerald-400 to-teal-300 bg-clip-text text-transparent">Vastundhi</span>
           </span>
           <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse" />
         </div>

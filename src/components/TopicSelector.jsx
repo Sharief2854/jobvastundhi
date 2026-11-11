@@ -17,7 +17,6 @@ import {
   Key,
 } from 'lucide-react';
 import { PREDEFINED_TOPICS, DIFFICULTIES } from '../constants/topics';
-import { LogoIcon } from './Logo';
 
 // Icon map for dynamic lookup
 const ICON_MAP = {
@@ -70,28 +69,7 @@ export function TopicSelector({
   };
 
   return (
-    <div className="max-w-4xl mx-auto w-full px-4 py-8 sm:py-12 space-y-8">
-      {/* Editorial Header with JobVastundhi Brand & Sharief Credit */}
-      <div className="space-y-3 text-center max-w-xl mx-auto flex flex-col items-center">
-        <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-zinc-900 border border-zinc-800 text-xs text-zinc-300 shadow-xs">
-          <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse" />
-          <span>Fresher Placement Simulator</span>
-          <span className="text-zinc-600">•</span>
-          <span className="text-zinc-400 font-medium">Developed by <strong className="text-zinc-200">Sharief</strong></span>
-        </div>
-
-        <div className="flex items-center justify-center gap-3">
-          <LogoIcon className="w-10 h-10 sm:w-12 sm:h-12" />
-          <h1 className="text-3xl sm:text-4xl font-black tracking-tight text-white">
-            Job<span className="text-emerald-400">Vastundhi</span>
-          </h1>
-        </div>
-
-        <p className="text-sm text-zinc-400 leading-relaxed max-w-lg">
-          టెన్షన్ పడకు... జాబ్ వచ్చేద్ది! Master the most-asked technical interview questions tested by top tech companies for entry-level roles.
-        </p>
-      </div>
-
+    <div className="max-w-4xl mx-auto w-full px-4 py-6 sm:py-8 space-y-6">
       {/* Helper Banner when API Key is missing */}
       {!hasKey && (
         <div className="max-w-xl mx-auto p-3.5 rounded-lg bg-zinc-900 border border-zinc-800 text-xs flex items-center justify-between gap-3 text-zinc-300 shadow-sm">
