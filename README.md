@@ -12,9 +12,11 @@
 
 ## 🚀 About JobVastundhi
 
-**JobVastundhi** is a fast, 100% client-side technical interview preparation simulator tailored specifically for college graduates, freshers, and developers who recently started learning.
+**JobVastundhi** is an ultra-fast, 100% client-side technical interview preparation simulator tailored specifically for college graduates, freshers, and developers who recently started learning.
 
-Powered directly by the user's **Google Gemini API Key (BYOK)**, JobVastundhi requires **zero login, zero backend, and zero tracking**—storing API keys strictly in the browser's local storage.
+Powered directly by the candidate's **Google Gemini API Key (BYOK)**, JobVastundhi requires **zero login, zero backend, and zero tracking**—storing API keys strictly in the browser's local storage.
+
+📖 **Comprehensive PRD**: For complete architectural specifications and product requirements, read the [Product Requirements Document (PRD)](docs/PRD.md).
 
 ---
 
@@ -26,7 +28,19 @@ Powered directly by the user's **Google Gemini API Key (BYOK)**, JobVastundhi re
 - **🏆 10-Question Milestone Achievement Board**: Automatically celebrates every 10 completed questions with confetti, accuracy stats, and unlocked badge tiers (*Apprentice Coder*, *Interview Contender*, *Technical Specialist*).
 - **📥 1-Click PDF & Markdown Export**: Download all answered questions, chosen options, correct answers, and technical interview rationales as a printable **PDF report** or **Markdown (`.md`)** file.
 - **💀 Pure Skeleton Buffering**: Clean, distraction-free skeleton loading placeholders for upcoming question batches.
+- **🔄 Resilient AI Model Discovery**: Automatically discovers available Gemini models via `ModelService.ListModels` to fallback gracefully when quota limits occur.
 - **🔒 Privacy First & Client-Side**: No databases, no external analytics, keys never leave your machine.
+
+---
+
+## ⌨️ Examination Controls & Shortcuts
+
+| Action | Control |
+| :--- | :--- |
+| **Select Option A / B / C / D** | Click option or press `1`, `2`, `3`, `4` (or `A`, `B`, `C`, `D`) |
+| **Next Question** | Click button or press `Enter` / `Space` |
+| **Download PDF** | Click "Download (PDF)" in Palette, Navbar, or Milestone Board |
+| **Switch Topic** | Click "Topics" in top navbar |
 
 ---
 
@@ -81,6 +95,7 @@ Click **"Connect API Key"** in the top bar. You can obtain a free Gemini API key
 
 **Developed by Sharief**  
 - GitHub: [@Sharief2854](https://github.com/Sharief2854)
+- Repository: [https://github.com/Sharief2854/jobvastundhi](https://github.com/Sharief2854/jobvastundhi)
 
 ---
 
