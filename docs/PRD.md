@@ -1,6 +1,6 @@
 # Product Requirements Document (PRD)
 ## JobVastundhi 🎯
-> **టెన్షన్ పడకు... జాబ్ వచ్చేద్ది!**  
+> **Ace Your Technical Interview.**  
 > *Most-Asked Technical Interview Questions for Freshers & Entry-Level Developers.*  
 > **Developed by Sharief**
 
